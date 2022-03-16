@@ -13,15 +13,30 @@ body{
     overflow-x: hidden;
 }
 
-.banner{
+.content{
     background-image: url('Assets/Images/netflix-system-design-cover.jpg');
-
+    position:relative;
     height: 100%;
     width: 100%;
-    box-shadow: inset 100px 200px 500px black;
+    box-shadow: inset 0px 20px 20px black;
     overflow-y: hidden;
 }
 
+.content::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: calc(0.5);
+}
+
+.banner{
+    
+}
 .top{
     display:flex;
     width: 100%;
@@ -36,6 +51,7 @@ body{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 0.5rem;
+    z-index: 2;
 }
 
 .logo{
@@ -97,6 +113,7 @@ select option{
     color: #ffff;
     flex-direction: column;
     padding: 11% 10%;
+    
 }
 
 .Unlimited{
@@ -104,33 +121,38 @@ select option{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .Unlimited h1{
     font-size: 3.75rem;
+    z-index: 2;
 }
 
 .Unlimited h2{
     font-size: 1.75rem;
     margin-top: 1rem;
     font-weight: 500;
+    z-index: 2;
 }
 
 .Unlimited h3{
     margin-top: 2rem;
     font-weight: 300 ;
+    z-index: 2;
 }
 /* clamp(25px,70px,100px); */
 .email{
     display: flex;
     margin-top: 2rem;
     justify-content: center;
+    
 }
 .email input{
     width: 40vw;
     text-align: left;
     font-size: 20px;
-    
+    z-index: 2;
 }
 
 .email a{
@@ -138,6 +160,7 @@ select option{
     color: #ffff;
     padding: 2.75% 1rem;
     font-size: 30px;
+    z-index: 2;
 }
 
 .jumbotron{
@@ -146,7 +169,7 @@ select option{
 
 .first,.second,.third,.fourth{
     display: flex;
-    height: 65%;
+    height: 70%;
     width: 100vw;
     background-color: black;
     border-top: 4px solid gray;
@@ -156,24 +179,77 @@ select option{
 }
 
 .jtext{
-    width:50%;
-    margin-left: 5%;
+    width:52%;
+    display: flex;
+    flex-direction: column;
 }
 
+.jtext.jl{
+    align-items:flex-end;
+    padding-right: 5%;
+}
+
+.jhead{
+    width: 80%;
+}
 .jhead h1{
     font-size: 50px;
+    
 }
 
 .jdesc{
     width: 80%;
+    margin-top: 1rem;
 }
 .jdesc h2{
     font-weight: 300;
+    font-size: 25px;
     
 }
 .jimg{
     margin-left: 5%;
+    width: 48%;
 }
 .jimg img{
     width: 75%;
+}
+
+.faq{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid gray;
+}
+
+.faqcard{
+    padding: 7% 5%;
+}
+
+.faq h1{
+    font-size: 50px;
+    color: #ffff;
+
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    margin: 5% 20%;
+}
+
+.q{
+    background-color:gray ;
+    padding: 5% 20%;
+}
+.q h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.footer{
+    height: 55%;
+    background-color: black;
 }
