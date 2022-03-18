@@ -112,3 +112,110 @@ body{
     margin-left: 0;
 
 }
+
+.mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    min-width: 30rem;
+    background-color: black;
+    /* opacity: calc(0.8); */
+    z-index: 5;
+}
+
+.block-content{
+    margin: 5rem;
+}
+.block-head{
+    margin-bottom: 2rem ;
+}
+.block-head h2{
+    color: white;
+    font-size: 2rem;
+}
+
+label{
+    color: white;
+    position: absolute;
+    transform: translatex(25px);
+}
+
+.float-container h3{
+    color: black;
+    opacity: calc(0.6);
+    position: absolute;
+    transform: translate(5rem,1rem);
+    
+}
+
+.float-container{
+    position: relative;
+    opacity: calc(0.7);
+    margin-top: 1rem;    
+}
+.float-container input{
+    width: 20rem;
+    height: 3rem;
+    z-index: -1;
+}
+
+/* .button{
+    margin-top: 3rem;
+}
+
+.button a{
+    padding : 1rem 8.5rem;
+    white-space: nowrap;
+    background-color: rgb(232,12,20);
+    text-decoration: none;
+    text-align: center;
+    color: white;   
+    font-size: 20px; 
+    border-radius: 3px;
+    font-size: 1rem;
+    
+} */
+
+.button{
+    margin-top: 3rem;
+    background-color: rgb(232,12,20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a{
+    padding: 1rem 8.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem ;
+    border-radius: 3px;
+}
+
+.remember{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember h4{
+    color: white;
+}
+
+
+.below{
+    margin-top: 2rem;
+}
+
+.below h4{
+    color:white;
+    font-weight: 300 ;
+    margin-bottom: 0.5rem;
+}
