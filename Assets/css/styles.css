@@ -15,7 +15,7 @@ body{
 }
 
 .content{
-    background-image: url('Assets/Images/netflix-system-design-cover.jpg');
+    background-image: url('../Images/netflix-system-design-cover.jpg');
     position:relative;
     height: 100%;
     width: 100%;
@@ -102,8 +102,7 @@ select option{
     background-color: rgb(232,12,20);
     text-decoration: none;
     text-align: center;
-    color: white;   
-    font-size: 20px; 
+    color: white;    
     border-radius: 3px;
     font-size: 1rem;
 }
@@ -170,13 +169,18 @@ select option{
 
 .first,.second,.third,.fourth{
     display: flex;
-    height: 70%;
     width: 100vw;
     background-color: black;
     border-top: 4px solid rgba(48,48,48,255);
     color: #ffff;
     align-items: center;
     
+}
+
+.first-content,.second-content,.third-content,.fourth-content{
+    display: flex;
+    align-items: center;
+    padding: 5% 2%;
 }
 
 .jtext{
@@ -195,7 +199,6 @@ select option{
 }
 .jhead h1{
     font-size: 50px;
-    
 }
 
 .jdesc{
@@ -309,10 +312,9 @@ select option{
 .footcontent{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 .footcontent h3{
     color: rgba(48,48,48,255);
@@ -344,4 +346,104 @@ select option{
     margin-bottom: 3%;
     margin-left: 0;
 
+}
+
+@media screen and  (max-width : 1189px){
+    .jhead h1{
+        font-size: calc(.5em + 3vw);
+    }
+   
+}
+
+@media screen and  (max-width : 950px){
+
+.first,.second,.third,.fourth{
+    justify-content: center;
+    height: 100vh;
+
+}
+    .first-content,.second-content,.third-content,.fourth-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-content,.fourth-content{
+        flex-direction: column-reverse;
+    }
+
+    .jtext{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        padding-right: 10%;
+    }
+    
+    .jtext.jl{
+        align-items:center;
+        padding-right: 5%;
+    }
+    
+    .jhead{
+        width: 100%;
+        text-align: center;
+    }
+    .jhead h1{
+        font-size: calc(.5em + 4vw);
+    }
+    
+    .jdesc{
+        width: 100%;
+        margin-top: 1%;
+    }
+    .jdesc h2{
+        font-weight: 300;
+        font-size: calc(.5em + 1.3vw);
+        text-align: center;
+    }
+    .jimg{
+        /* margin-left: 35%; */
+        margin-top: 5%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .jimg img{
+        width: 100vw;
+        max-width: 40rem;
+        min-width: 37rem;
+    }
+
+    .footcontent h3{
+        font-size: calc(.5em + 0.7vw);
+    }
+
+    .fc a{
+        font-size: calc(.5em + 0.7vw);
+    }
+
+    .faqcard h1{
+        font-size: calc(.5em + 4vw) ;
+    }
+    h2{
+        font-size: 1rem;
+    }
+}
+
+@media  screen and (max-width:704px) {
+    
+    .first-content,.second-content,.third-content,.fourth-content{
+        display: flex;
+        align-items: center;
+        padding: 3% 1%;
+    }
+
+    .footcontent{
+        margin-right: 25%;
+    }
+    
+    .fc3{
+        display: none;
+    }
 }

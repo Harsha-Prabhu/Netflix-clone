@@ -15,10 +15,10 @@ body{
 }
 
 .content{
-    background-image: url('Assets/Images/netflix-system-design-cover.jpg');
+    background-image: url('../Images/netflix-system-design-cover.jpg');
     position:relative;
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: 100vw;
     box-shadow: inset 0px 20px 20px black;
     overflow-y: hidden;
 }
@@ -70,6 +70,8 @@ body{
     flex-direction: column;
     background-color: black;
     opacity: calc(0.75); 
+    margin-top: 10%;
+    margin-bottom: 0;
 
 }
 
