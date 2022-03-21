@@ -414,6 +414,9 @@ select option{
         max-width: 40rem;
         min-width: 37rem;
     }
+    .footcontent{
+        margin-right: 25%;
+    }
 
     .footcontent h3{
         font-size: calc(.5em + 0.7vw);
@@ -439,9 +442,7 @@ select option{
         padding: 3% 1%;
     }
 
-    .footcontent{
-        margin-right: 25%;
-    }
+
     
     .fc3{
         display: none;
