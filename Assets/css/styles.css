@@ -429,8 +429,9 @@ select option{
     }
     .jimg img{
         width: 100vw;
-        max-width: 40rem;
-        min-width: 37rem;
+        max-width: 35rem;
+        min-width: 30rem;
+        transform: translateX(15%);
     }
     .footcontent{
         margin-right: 25%;
@@ -487,7 +488,7 @@ select option{
 
    
     .jimg img{
-        transform: translateX(0);
+        transform: translateX(13%);
     }
     .logo{
         margin-right: 0;
@@ -505,6 +506,13 @@ select option{
     }
 }
 
+@media screen and (max-width:650px) {
+    .jimg img{
+        transform: translateX(15%);
+        width: 25rem;
+    }
+}
+
 @media  screen and (max-width:609px) {
 
     .Unlimited h1{
@@ -513,6 +521,11 @@ select option{
     .Unlimited h3,.Unlimited h2{
         font-size: calc(.5em + 2vw);
 
+    }
+
+    .jimg img{
+        transform: translateX(13%);
+        width: 25rem;
     }
 }
 
@@ -528,4 +541,18 @@ select option{
         font-size: calc(.5em + 2vw);
 
     }
+
+    
+    .jimg img{
+        transform: translateX(10%);
+        width: 25rem;
+    }
+}
+
+
+@media  screen and (max-width:500px) {
+
+    .jimg img{
+    transform: translateX(0);
+}
 }
