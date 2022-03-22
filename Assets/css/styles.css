@@ -49,9 +49,9 @@ body{
     height: 5rem;
     align-items: center;
     justify-content: space-between;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 0.5rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5rem;
     z-index: 2;
 }
 
@@ -164,7 +164,7 @@ select option{
 }
 
 .jumbotron{
-    
+    margin:0;
 }
 
 .first,.second,.third,.fourth{
@@ -211,7 +211,7 @@ select option{
     
 }
 .jimg{
-    margin-left: 5%;
+    padding-left: 5%;
     width: 48%;
 }
 .jimg img{
@@ -357,6 +357,24 @@ select option{
 
 @media screen and  (max-width : 950px){
 
+    .Unlimited h1{
+        font-size: 3rem;
+    }
+
+    .email{
+        flex-direction: column;
+        align-items: center;
+    }
+    .email input{
+        width:100%;
+        font-size: 1rem;
+        height: 2rem;
+    }
+    .email a{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
 .first,.second,.third,.fourth{
     justify-content: center;
     height: 100vh;
@@ -377,7 +395,7 @@ select option{
         display: flex;
         flex-direction: column;
         padding: 0 5%;
-        padding-right: 10%;
+        padding-right: 5%;
     }
     
     .jtext.jl{
@@ -434,7 +452,9 @@ select option{
     }
 }
 
-@media  screen and (max-width:704px) {
+@media  screen and (max-width:750px) {
+
+
     
     .first-content,.second-content,.third-content,.fourth-content{
         display: flex;
@@ -442,9 +462,70 @@ select option{
         padding: 3% 1%;
     }
 
-
+    .jimg{
+        /* margin-left: 35%; */
+        margin-top: 5%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .jimg img{
+        width: 100vw;
+        max-width: 30rem;
+        min-width: 25rem;
+        transform: translateX(13%);
+    }
     
     .fc3{
         display: none;
+    }
+}
+
+
+@media  screen and (max-width:700px) {
+
+
+   
+    .jimg img{
+        transform: translateX(0);
+    }
+    .logo{
+        margin-right: 0;
+    }    
+    
+    .langsel
+    {
+        margin-left: 0;
+        margin-right: 5%;
+        
+    }
+    .ele-top{
+        overflow-x: none;
+        margin-right: 5%;
+    }
+}
+
+@media  screen and (max-width:609px) {
+
+    .Unlimited h1{
+        font-size: calc(.5em + 5vw);
+    }
+    .Unlimited h3,.Unlimited h2{
+        font-size: calc(.5em + 2vw);
+
+    }
+}
+
+@media  screen and (max-width:575px) {
+
+    .content{
+        height: 80vh;
+    }
+    .Unlimited h1{
+        font-size: calc(.5em + 5vw);
+    }
+    .Unlimited h3,.Unlimited h2{
+        font-size: calc(.5em + 2vw);
+
     }
 }
