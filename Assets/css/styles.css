@@ -243,7 +243,6 @@ select option{
 .questions{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -485,7 +484,11 @@ select option{
 
 @media  screen and (max-width:700px) {
 
-
+    .first,.second,.third,.fourth{
+        justify-content: center;
+        height: 90vh;
+    
+    }
    
     .jimg img{
         transform: translateX(13%);
@@ -504,13 +507,24 @@ select option{
         overflow-x: none;
         margin-right: 5%;
     }
+
+    .endemail h3{
+     font-size: calc(.5em + 1vw);   
+    }
 }
 
 @media screen and (max-width:650px) {
+
+    .first,.second,.third,.fourth{
+        justify-content: center;
+        height: 80vh;
+    
+    }
     .jimg img{
         transform: translateX(15%);
         width: 25rem;
     }
+   
 }
 
 @media  screen and (max-width:609px) {
@@ -541,11 +555,13 @@ select option{
         font-size: calc(.5em + 2vw);
 
     }
-
-    
     .jimg img{
         transform: translateX(10%);
         width: 25rem;
+    }
+
+    .q h2{
+        font-size: calc(.5em + 2vw);
     }
 }
 
@@ -554,5 +570,26 @@ select option{
 
     .jimg img{
     transform: translateX(0);
+}
+
+.q{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+select{
+    background-color: transparent;
+    padding: 4px;
+    margin: 0.5rem;
+    border: 1px solid #ffff;
+}
+.sign-in a{
+    padding : 4px;
+    white-space: nowrap;
+    background-color: rgb(232,12,20);
+    text-decoration: none;
+    text-align: center;
+    color: white;    
+    border-radius: 3px;
+    font-size: 1rem;
 }
 }
