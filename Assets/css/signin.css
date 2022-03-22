@@ -222,6 +222,60 @@ label{
     margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     
+    .content{
+        background-image: none;
+    }
+
+    .mid{
+    padding: 0 5%;
+    }
+    .block{
+        width: 100%;
+    }
+    .block-content{
+        margin: 5%;
+    }
+
+    .float-container h3{
+        transform: translate(0.5rem,1rem);
+        
+    }
+    .float-container input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .block-content{
+        padding: 0 10%;
+    }
+
+    .logo img{
+        width: 8rem;
+    }
+    /* .float-container input{
+        width: 90%;
+    }
+    .button{
+        width: 90%;
+    } */
+    .block-head{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    
+    .block-content{
+        padding: 0 15%;
+    }
+    .button a{
+        padding: 0.5rem 7rem;
+    }
 }
