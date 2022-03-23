@@ -257,9 +257,15 @@ select option{
     background-color: rgba(48,48,48,255);
     width: 75%;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
     padding-left: 1rem;
     margin-top: 1rem;
+    flex-direction: column;
+}
+.q a{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .q h2{
     color: #ffff;
@@ -267,21 +273,44 @@ select option{
     font-weight: 400;
     padding-right: 1rem;
 }
-#plus{
+#plus,#minus{
     font-size: 40px;
     width: fit-content;
-    
+}
+
+#minus{
+    display: none;
 }
 
 .answer{
-    margin-top: 0 !important;
-    border-top: 3px solid black;
-    
+    position: relative;
+    width: 100%;   
+    max-height: 0;
+    overflow-y: hidden;
 }
 
-.invisible{
+.answer::before{
+    content: "";
+    position: absolute;
+    height: 90%;
+    top:50%;
+    left: 0;
+}
+
+.question:target .answer{
+    max-height: 20rem;
+    scroll-behavior: smooth;
+}
+
+.question:target #plus{
     display: none;
 }
+
+.question:target #minus{
+    display: contents;
+}
+
+
 
 
 #test{
