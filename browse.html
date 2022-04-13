@@ -3,10 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Assets/css/browse.css">
+    <link rel="stylesheet" href="../Assets/css/browse.css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
+    <script src="./js/browse.js"></script>
     <div class="nav">
         <div class="navleft">
             <div class="logo">
@@ -55,17 +60,36 @@
         <div class="movie-list">
             <div class="genres">
                 <div class="genre-title">Indian Movies</div>
-                <div class="movie-cards">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="" id="firstm">
+                <div class="card-wrapper swiper mySwiper">
+                    <div class="movie-cards swiper-wrapper">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" id="firstm" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+                        <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" class="swiper-slide" alt="" class="mov" onclick="on()">
+
+                    </div> 
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <div class="cardinfo invisible">
+            <div class="card-content" >
+                <div class="close" onclick="off()"><h1>X</h1></div>
+                <div class="moviepic">
                     <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
-                    <img src="../Assets/Images/Browse/Movie Cards/Badhai ho.webp" alt="">
+                </div>
+                <div class="movtitle">
+                    <h1>Badhai ho</h1>
+                </div>
+                <div class="movdesc">
+                    <h2>Nakul, a 25-year-old man, is shocked to discover that his mother is pregnant. His struggle to come to terms with the news puts his relationship with his girlfriend, Renee, in jeopardy.</h2>
                 </div>
             </div>
         </div>

@@ -302,6 +302,10 @@ select option{
     scroll-behavior: smooth;
 }
 
+.question.answer:target .answer{
+    display: none;
+}
+
 .question:target #plus{
     display: none;
 }
